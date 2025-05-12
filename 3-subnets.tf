@@ -3,10 +3,10 @@
 
 
 // HQ
-resource "google_compute_subnetwork" "twism-hq" {
-  name                     = "twism-hq"
-  ip_cidr_range            = "10.32.10.0/24"
-  region                   = "us-central1"
-  network                  = google_compute_network.twismnetwork.id
+resource "google_compute_subnetwork" "NAME" {
+  name                     = "NAME"
+  ip_cidr_range            = "10.0.255.0/24"
+  region                   = "REGION"
+  network                  = google_compute_network.YOUR_NETWORK_NAME.id
   private_ip_google_access = true
 }

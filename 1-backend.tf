@@ -1,9 +1,10 @@
 # https://www.terraform.io/language/settings/backends/gcs
+
 terraform {
   backend "gcs" {
-    bucket = "terraformstate065"
+    bucket = "BUCKET NAME"
     prefix = "terraform/state"
-    credentials = "true-artwork-456400-g8-cc40835194a7.json"
+    credentials = "YOUR_PROJECT_KEY.json"
   }
   required_providers {
     google = {
