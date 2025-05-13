@@ -2,9 +2,9 @@
 
 terraform {
   backend "gcs" {
-    bucket = "BUCKET NAME"
+    bucket = "terraformstate065"
     prefix = "terraform/state"
-    credentials = "YOUR_PROJECT_KEY.json"
+    credentials = "mykey.json"
   }
   required_providers {
     google = {

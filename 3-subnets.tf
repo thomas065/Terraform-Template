@@ -3,10 +3,10 @@
 
 
 // HQ
-resource "google_compute_subnetwork" "NAME" {
-  name                     = "NAME"
+resource "google_compute_subnetwork" "wife-country" {
+  name                     = "wife-country"
   ip_cidr_range            = "10.0.255.0/24"
-  region                   = "REGION"
-  network                  = google_compute_network.YOUR_NETWORK_NAME.id
+  region                   = "southamerica-east1"
+  network                  = google_compute_network.hardwork.id
   private_ip_google_access = true
 }
